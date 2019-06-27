@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrapper{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.emoji-item{
+  position: absolute;
+  font-size: 24px;
+  transform: translate(-50%,-50%);
+}
+.random-emoji{
+  cursor: pointer;
+}
+.animate1{
+  animation: anmate_1 20s linear infinite alternate;
+}
+.animate2{
+  animation: anmate_2 20s linear infinite alternate;
+}
+.animate3{
+  animation: anmate_3 20s linear infinite alternate;
+}
+.animate4{
+  animation: anmate_4 20s linear infinite alternate;
+}
+
+@keyframes anmate_1{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(800px);
+  }
+}
+
+@keyframes anmate_2{
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-800px);
+  }
+}
+
+@keyframes anmate_3{
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(800px);
+  }
+}
+
+@keyframes anmate_4{
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-800px);
+  }
+}
